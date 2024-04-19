@@ -17,6 +17,10 @@ public class Main {
 		System.out.println("Le solde après crédit de 5 est : " + z);
 		double q = cb.debiterSolde(5, 5);
 		System.out.println("Le solde après débit de 5 et crédit de 5 est : " + q);
+		double a = cb.debiterSolde(-5, 15);
+		System.out.println("Le solde après débit de -5 et crédit de 15 est : " + a);
+		double b = cb.crediterSolde(10, 15);
+		System.out.println("Le solde après crédit de 15 est : " + b);		
 	}
 
 }

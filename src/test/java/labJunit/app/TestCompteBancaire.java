@@ -35,4 +35,16 @@ class TestCompteBancaire {
 		CompteBancaire cb = new CompteBancaire();
 		assertEquals(-5,cb.crediterSolde(10, 15));
 	}
+
+	@Test
+	void testCrediterSolde3() {
+		CompteBancaire cb = new CompteBancaire();
+		assertEquals(10,cb.crediterSolde(10, -5));
+	}
+
+	@Test
+	void testCrediterSolde4() {
+		CompteBancaire cb = new CompteBancaire();
+		assertEquals(10,cb.crediterSolde(10, 0));
+	}
 }
