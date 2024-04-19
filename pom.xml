@@ -5,4 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>labJunit</name>
   <description>Calculatrice en java avec des tests unitaires</description>
+  <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
+
