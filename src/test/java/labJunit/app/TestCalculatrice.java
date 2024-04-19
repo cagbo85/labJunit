@@ -1,21 +1,20 @@
 package labJunit.app;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class TestCalculatrice {
-    
-        @Test
-        public void testSomme() {
-            Calculatrice c = new Calculatrice();
-            Calculatrice s;
-            assertEquals(5.0, s.somme(2, 3));
-        }
-    
-        @Test
-        public void testProduit() {
-            Calculatrice c = new Calculatrice();
-            Calculatrice p;
-            assertEquals(5.0, p.produit(2, 3));
-        }
-    
+import org.junit.jupiter.api.Test;
+
+class TestCalculatrice {
+
+	@Test
+	void testSomme() {
+		Calculatrice c = new Calculatrice();
+		assertEquals(5,c.somme(2, 3));
+	}
+
+	@Test
+	void testProduit() {
+		Calculatrice c = new Calculatrice();
+		assertEquals(6,c.produit(2, 3));
+	}
 }
